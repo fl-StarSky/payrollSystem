@@ -1,0 +1,58 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:background="#EEEEEE"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             tools:context="com.ncu.zhuoyuejike.fuli.payrollsystem.fragment.MemberFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <android.support.v7.widget.RecyclerView
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:id="@+id/member_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layoutManager="LinearLayoutManager"
+        tools:listitem="@layout/member_item"/>
+    <com.andexert.library.RippleView
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:id="@+id/member_rv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:rv_rippleDuration="300"
+        app:rv_zoom="true"
+        app:rv_zoomScale="1.02"
+        app:rv_color="@android:color/darker_gray">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="@android:color/white"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/member_iv_add"
+            android:layout_marginRight="9dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:src="@drawable/plus"
+            android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/member_tv"
+        android:layout_toRightOf="@+id/member_iv_add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:text="添加"/>
+
+    </LinearLayout>
+    </com.andexert.library.RippleView>
+
+</LinearLayout>

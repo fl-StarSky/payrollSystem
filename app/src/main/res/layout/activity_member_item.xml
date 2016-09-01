@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:background="@android:color/white"
+              android:paddingTop="10dp"
+              android:paddingBottom="10dp"
+              android:orientation="horizontal"
+              android:gravity="center"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+    <com.andexert.library.RippleView
+        android:id="@+id/activity_member_rv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:rv_rippleDuration="300"
+        app:rv_zoom="true"
+        app:rv_zoomScale="1.02"
+        app:rv_color="@android:color/darker_gray">
+    <TextView
+        android:id="@+id/activity_member_item_tv"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        android:textSize="24sp"
+        android:textColor="#bbbbbb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginRight="8dp"
+        android:gravity="right"
+        android:textColor="#333333"
+        android:id="@+id/activity_member_item_view"
+        android:layout_width="match_parent"
+        android:textSize="24sp"
+        android:drawableRight="@drawable/enter"
+        android:layout_height="wrap_content"/>
+</com.andexert.library.RippleView>
+</LinearLayout>

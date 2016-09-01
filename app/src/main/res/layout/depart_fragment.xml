@@ -1,0 +1,58 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+              android:orientation="vertical"
+              android:background="#EEEEEE"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             tools:context="com.ncu.zhuoyuejike.fuli.payrollsystem.fragment.DepartmentFragment">
+<!--!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
+<!--!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
+
+    <!-- TODO: Update blank fragment layout -->
+    <android.support.v7.widget.RecyclerView
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:id="@+id/depart_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layoutManager="LinearLayoutManager"
+        tools:listitem="@layout/depart_item">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <com.andexert.library.RippleView
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:id="@+id/depart_rv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:rv_rippleDuration="300"
+        app:rv_zoom="true"
+        app:rv_zoomScale="1.02"
+        app:rv_color="@android:color/darker_gray">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="@android:color/white"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp"
+        android:orientation="horizontal">
+
+
+    <TextView
+        android:id="@+id/depart_tv"
+        android:layout_toRightOf="@+id/depart_iv_add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:textSize="24sp"
+        android:drawableLeft="@drawable/plus"
+        android:text="添加"/>
+
+    </LinearLayout>
+    </com.andexert.library.RippleView>
+        </LinearLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:background="@android:color/white"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+    <!--!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
+    <!--!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
+    <com.andexert.library.RippleView
+        android:id="@+id/member_rv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:rv_rippleDuration="300"
+        app:rv_zoom="true"        app:rv_zoomScale="1.02"
+        app:rv_color="@android:color/darker_gray">
+    <TextView
+        android:id="@+id/member_item_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="24sp"
+        android:layout_marginTop="8dp"/>
+</com.andexert.library.RippleView>
+
+</LinearLayout>
